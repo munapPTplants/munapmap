@@ -1,4 +1,4 @@
-# Mappa munap Museo Naturilistico e Archeologico Pisotiese
+# Mappa munap MUNAP-Museo Naturalistico Archeologico dell'Appennino Pistoiese  EcoMuseo e IBE CNR.
 
 Usando [Leaflet](https://leafletjs.com/) si crea una mappa collegata ad un  Google Sheet pubblicato in rete. 
 
