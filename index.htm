@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="css/leaflet-sidebar.css"/>
     <link rel="stylesheet" href="css/L.Control.Locate.min.css" />
-    <link rel="stylesheet" href="css/leaflet.groupedlayercontrol.min.css"/>
-    <link rel="stylesheet" href="css/MarkerCluster.css">
+     <link rel="stylesheet" href="css/MarkerCluster.css">
     <link rel="stylesheet" href="css/MarkerCluster.Default.css">
    
     <style>
@@ -199,7 +198,6 @@ function addPoints(data) {
         sic:data[row].sicurezza_determinazione,
         rar:data[row].rarita,
         note:data[row].note,
-        geo:data[row].sito_obs,
         id:data[row].index,
         foto_a:data[row].foto_A,
         foto_b:data[row].foto_B,
@@ -220,7 +218,7 @@ function addPoints(data) {
           "<strong>Categoria</strong>:"+e.target.feature.properties.cat+ "<br>"+
           "<strong>Sicurezza determinazione</strong>:"+e.target.feature.properties.sic + "<br>" +
           "<strong>Rarita\'</strong>:"+e.target.feature.properties.rar + "<br>" +
-          "<strong>Note</strong>:"+e.target.feature.properties.geo + "<br>" +
+          "<strong>Note</strong>:"+e.target.feature.properties.note + "<br>" +
           "<strong>ID</strong>:"+e.target.feature.properties.id + "<br>" + 
           "<strong>Validatore</strong>:"+"MUNAP"+ "<br>"+
           "<strong>Foto A</strong>:"+"<br>"+
