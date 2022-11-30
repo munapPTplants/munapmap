@@ -106,8 +106,13 @@ L.control.locate({strings: { title: "Si sono qui!" }}).addTo(map);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function standbyfotoA() {
+    document.getElementById('fotoA').src = 'http://www.ecomuseopt.it/wp-content/uploads/2018/07/logo.png'
+}
 
-
+function standbyfotoB() {
+    document.getElementById('fotoB').src = 'http://www.ecomuseopt.it/wp-content/uploads/2018/07/logo.png'
+}
 var sidebar = L.control
   .sidebar({
     container: "sidebar",
@@ -222,9 +227,9 @@ function addPoints(data) {
           "<strong>ID</strong>:"+e.target.feature.properties.id + "<br>" + 
           "<strong>Validatore</strong>:"+"MUNAP"+ "<br>"+
           "<strong>Foto A</strong>:"+"<br>"+
-          "<img src=\'"+e.target.feature.properties.foto_a+"' alt=\"Non disponibile\">"+ "<br>"+
+          "<img id =\"fotoA\" src=\'"+e.target.feature.properties.foto_a+"' onerror=\"standbyfotoA()\" alt=\"Non disponibile\">"+ "<br>"+
           "<strong>Foto B</strong>:"+"<br>"+
-          "<img src=\'"+e.target.feature.properties.foto_b+"' alt=\"Non disponibile\">"+ "<br>";
+          "<img id =\"fotoB\" src=\'"+e.target.feature.properties.foto_b+"'  onerror=\"standbyfotoB()\"  alt=\"Non disponibile\">"+ "<br>";
        sidebar.open(panelID);
       }
     });
